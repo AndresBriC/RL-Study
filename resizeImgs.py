@@ -2,7 +2,7 @@ import os
 import cv2
 
 # Directory containing the original images
-input_directory = 'ppo_from_scratch/Symbols/'
+input_directory = './Symbols/'
 # Directory to save the resized images
 output_directory = './ResizedSymbols/'
 
