@@ -4,7 +4,7 @@ import cv2
 # Directory containing the original images
 input_directory = './Symbols/'
 # Directory to save the resized images
-output_directory = './ResizedSymbols/'
+output_directory = './ResizedSymbols64/'
 
 # Create the output directory if it doesn't exist
 if not os.path.exists(output_directory):
@@ -22,7 +22,7 @@ for filename in os.listdir(input_directory):
         img = cv2.imread(input_path)
 
         # Resize the image to 20x20
-        img_resized = cv2.resize(img, (20, 20), interpolation=cv2.INTER_AREA)
+        img_resized = cv2.resize(img, (64, 64), interpolation=cv2.INTER_AREA)
 
         # Save the resized image to the output directory
         cv2.imwrite(output_path, img_resized)
